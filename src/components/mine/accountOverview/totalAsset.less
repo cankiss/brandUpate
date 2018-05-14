@@ -1,0 +1,47 @@
+#main{
+    height:100px;
+    width:80%;
+    margin:0 auto;
+    padding: 10px 0;
+  }
+
+  #main-asset {
+    padding: 20px 0;
+  }
+  .slide {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1) -.1s;
+    span{
+      margin-left: 20px;
+    }
+  }
+  .animate {
+    max-height: 999px;
+    transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+    transition-delay: 0s;
+  }
+  .total-asset {
+    background: #fff;
+    margin-top: 10px;
+    .total-money {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 10px 10px 0;
+    }
+    .anticipated-money {
+      border-top: 1px solid #f2f2f2;
+      padding: 5px 10px;
+      p{
+        line-height: 25px;
+      }
+    }
+    .asset-info {
+      position: absolute;
+      top:5px;
+      left:130px;
+      p{
+        padding: 15px 10px;
+        line-height: 1;
+      }
+    }
+  }

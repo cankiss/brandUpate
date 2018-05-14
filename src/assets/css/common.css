@@ -1,0 +1,225 @@
+body {
+    background: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* 图片自适应 */
+
+img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+    display: block;
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
+}
+
+#app {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*a统一红色*/
+
+.red-text {
+    color: #ff665e;
+}
+
+
+/*文本红色*/
+
+.red-bg {
+    background-color: #ff665e;
+}
+
+
+/*背景红色*/
+
+
+/*页面主容器上下间距*/
+
+.container {}
+
+
+/*没有头部和底部时*/
+
+.container.has-header {
+    margin-top: 47px;
+}
+
+
+/*只有头部时*/
+
+.container.has-footer {
+    padding-bottom: 50px;
+}
+
+
+/*只有底部时*/
+
+.container.has-all {
+    margin-top: 47px;
+    padding-bottom: 50px;
+}
+
+
+/*头部底部都有时*/
+
+
+/*页面主体内容容器*/
+
+.main {
+    padding-top: 10px;
+}
+
+
+/*字体颜色*/
+
+.font-999 {
+    color: #999
+}
+
+.font-666 {
+    color: #666
+}
+
+.font-333 {
+    color: #333
+}
+
+.font-000 {
+    color: #000
+}
+
+
+/****文字居中，左，右**/
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/***内边距*/
+
+.padleft20 {
+    padding-left: 20px !important;
+}
+
+
+/***字体大小***/
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+
+
+/*****flow****/
+
+.icon-flow {
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+    margin: 8px 12px 16px 10px;
+    background: #FF665E;
+    text-align: center;
+}
+
+.icon-flow::before {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 12px;
+    height: 24px;
+    background: url(../pro/icon_flow_head.png) center no-repeat;
+    background-size: cover;
+}
+
+.icon-flow::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 24px;
+    background: url(../pro/icon_flow_fail.png) center no-repeat;
+    background-size: cover;
+}
+
+.weui-cells {
+    margin-top: 0 !important;
+}
+
+.vux-tab .vux-tab-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*增加xinput右侧的叉号的点击面积*/
+
+.weui-icon.weui_icon_clear.weui-icon-clear {
+    font-size: 16px;
+    padding: 0 4px;
+}
